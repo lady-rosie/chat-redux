@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Message from '../components/message';
-import setMessages from '../actions';
+import { setMessages } from '../actions';
 
 class MessageList extends Component {
   componentWillMount() {
