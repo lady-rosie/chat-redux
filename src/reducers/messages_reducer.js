@@ -1,4 +1,4 @@
-import { SET_MESSAGES, MESSAGE_POSTED } from '../actions';
+import { SET_MESSAGES, MESSAGE_POSTED, CHANNEL_SELECTED } from '../actions';
 
 const messagesReducer = (state = null, action) => {
   switch (action.type) {
@@ -10,7 +10,9 @@ const messagesReducer = (state = null, action) => {
       copiedState.push(action.payload);
       return copiedState;
     }
-
+    case CHANNEL_SELECTED: {
+      return []; // Channel has changed. Clearing view.
+    }
     default:
       return state;
   }

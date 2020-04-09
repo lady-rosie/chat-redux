@@ -1,6 +1,7 @@
 const API_URL = 'https://wagon-chat.herokuapp.com';
 export const SET_MESSAGES = 'SET_MESSAGES';
 export const MESSAGE_POSTED = 'MESSAGE_POSTED';
+export const CHANNEL_SELECTED = 'CHANNEL_SELECTED';
 
 export function setMessages(channel) {
   const url = `${API_URL}/${channel}/messages`;
@@ -27,5 +28,11 @@ export function createMessage(channel, author, content) {
   return {
     type: MESSAGE_POSTED,
     payload: promise // Will be resolved by redux-promise
+  };
+}
+export function selectChannel(channel) {
+  return {
+    type: CHANNEL_SELECTED,
+    payload: channel
   };
 }
