@@ -14,7 +14,7 @@ body {
   padding: 10px;
   width: 60px;
   height: 100%;
-  background: #dbdbdb;
+  background: #E01A4F;
   box-sizing: border-box;
 }
 
@@ -29,7 +29,7 @@ body {
   padding: 20px;
   width: 220px;
   height: 100%;
-  background: #f4f4f4;
+  background: #F9DD8E;
   box-sizing: border-box;
 }
 
@@ -55,7 +55,7 @@ body {
 
 .channels-container > ul > li.active {
   font-weight: 600;
-  color: black
+  color: white;
 }
 
 /* Column 3/3 *****************************************************************/
@@ -113,6 +113,7 @@ body {
 
 .message-container > p {
   margin: 5px 0 10px;
+  color: #0C090D;
 }
 
 .channel-editor {
@@ -137,7 +138,7 @@ button {
   border-radius: 0 2px 2px 0;
   box-shadow: 0 1px 2px rgba(0,0,0,0.07);
   border: none;
-  background-color: #D23333;
+  background-color: #EF5D60;
   color: white;
   font-size: 14px;
   font-weight: 600;
